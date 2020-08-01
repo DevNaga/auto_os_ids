@@ -5,6 +5,7 @@
 #include <mutex>
 #include <condition_variable>
 #include <socket_api.h>
+#include <monitor_engine.h>
 
 namespace auto_os::middleware {
 
@@ -18,6 +19,7 @@ class eth_ids {
         void receive_thread();
         std::unique_ptr<auto_os::lib::raw_socket> r_;
         std::unique_ptr<std::thread> rx_thr_;
+	std::unique_ptr<monitor_engine> e_;
 };
 
 }

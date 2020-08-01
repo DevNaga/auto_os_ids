@@ -1,0 +1,18 @@
+{
+    "interface": "enp0s3",
+    "allow": {
+    },
+    "deny": {
+        "l2_mac_addr_list": [
+                "00:00:00:00:00:00",
+                "ff:ff:ff:ff:ff:ff"
+        ],
+        "ethertypes": [
+                "0x88dc"
+        ],
+        "vlan_ids": [
+                1, 2
+        ]
+    }
+}
+
