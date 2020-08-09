@@ -1,0 +1,11 @@
+{
+    "daq_source": "interface",
+    "interface": {
+        "use_all_interfaces": true,
+        "use_interface": "enp0s3"
+    },
+    "pcap": {
+        "path": "./arp_packet.pcap"
+    }
+}
+

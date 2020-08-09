@@ -5,6 +5,16 @@
 
 namespace auto_os::middleware {
 
+void analytics_db::update_ethertype_denial(uint16_t ethertype, traffic_direction dir)
+{
+    l2_ethertype_denials ethtyped;
+
+    ethtyped.ethertype = ethertype;
+    ethtyped.traf = dir;
+
+    l2_ethertype_deny_list.push_back(ethtyped);
+}
+
 void analytics_db::update_mac_denial(uint8_t *denied_mac, traffic_direction dir)
 {
     l2_mac_denials l2d;

@@ -15,6 +15,11 @@ struct l2_mac_denials {
     traffic_direction traf;
 };
 
+struct l2_ethertype_denials {
+    uint16_t ethertype;
+    traffic_direction traf;
+};
+
 class analytics_db {
     public:
         ~analytics_db() = default;
@@ -26,10 +31,12 @@ class analytics_db {
         }
 
         void update_mac_denial(uint8_t *denied_mac, traffic_direction dir);
+        void update_ethertype_denial(uint16_t ethertype, traffic_direction dir);
 
     private:
         explicit analytics_db() = default;
         std::vector<l2_mac_denials> l2_mac_deny_list;
+        std::vector<l2_ethertype_denials> l2_ethertype_deny_list;
 };
 
 class analytics {

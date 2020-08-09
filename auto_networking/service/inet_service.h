@@ -1,0 +1,6 @@
+#ifndef __AUTO_NETWORK_INET_SERVICE_H__
+#define __AUTO_NETWORK_INET_SERVICE_H__
+
+#endif
+
+

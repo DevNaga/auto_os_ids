@@ -1,6 +1,7 @@
 #include <autonet_eth.h>
 #include <string.h>
 #include <helpers.h>
+#include <autonet_ethertypes.h>
 
 namespace auto_os::network {
 
@@ -41,8 +42,8 @@ int Ethernet_Layer::Deserialize(uint8_t *buf, size_t buf_size, size_t &off, ethe
     memcpy(&ethertype, buf + off, 2);
     off += 2;
 
-    eth->ethertype = auto_os::lib::bswap16b(eth->ethertype);
-   
+    eth->ethertype = auto_os::lib::bswap16b(ethertype);
+
     return off;
 }
 
