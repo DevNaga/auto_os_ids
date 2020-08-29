@@ -1,6 +1,7 @@
 {
     "interface": "enp0s3",
     "allow": {
+        "ptp_mac": true
     },
     "deny": {
         "l2_mac_addr_list": [
@@ -20,6 +21,12 @@
             "drop_senders": [
                 "192.168.0.1",
                 "192.168.0.2"
+            ]
+        },
+        "icmp": {
+            "deny": true,
+            "deny_from_ipv4": [
+                "192.168.0.1"
             ]
         }
     }

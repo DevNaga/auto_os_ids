@@ -1,3 +1,8 @@
+/**
+ * @brief - ethertypes
+ * 
+ * @copyright - All rights reserved 2020-present Devendra Naga (devendra.aaru@outlook.com)
+ */
 #ifndef __AUTONET_ETHERTYPES_H__
 #define __AUTONET_ETHERTYPES_H__
 

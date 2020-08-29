@@ -10,8 +10,11 @@ set(AUTO_NET_LIB_SRC
 	./tcpip/l2/autonet_arp.cc
 	./tcpip/l3/autonet_ipv4.cc
 	./tcpip/l4/autonet_icmp.cc
-	./tcpip/l4/autonet_udp.cc
+<<<<<<< HEAD
 	./tcpip/l4/autonet_tcp.cc)
+=======
+	./tcpip/l4/autonet_udp.cc)
+>>>>>>> 66f4fd954e0cc6aa38804ceff6fc54bcac8af0cf
 
 include_directories(
 	./tcpip/l2/

@@ -3,7 +3,7 @@
 
 namespace auto_os::network {
 
-enum class protocols {
+enum class protocols : int {
     IPV6_HOPOPT             = 0x00,
     ICMP                    = 0x01,
     IGMP                    = 0x02,

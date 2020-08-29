@@ -10,7 +10,8 @@ set(ETH_IDS_SRC
 
 include_directories(
 	./eth_ids/
-	./eth_ids/daq/)
+	./eth_ids/daq/
+	)
 
 add_executable(eth_ids ${ETH_IDS_SRC})
 target_link_libraries(eth_ids auto_network auto_lib jsoncpp pthread)
